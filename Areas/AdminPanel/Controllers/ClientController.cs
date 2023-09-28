@@ -35,14 +35,8 @@ namespace InfinityPlatform.MvcUl.Areas.AdminPanel.Controllers
         {
             
 
-            if (clientImage == null)
-                return Json(new { IsSuccess = false, Message = "Kategori resmi seçilmelidir" });
+            
 
-            if (!clientImage.ContentType.StartsWith("image/"))
-                return Json(new { IsSuccess = false, Message = "Sadece resim dosyası seçilmelidir" });
-
-            if (clientImage.Length > 1024 * 250)
-                return Json(new { IsSuccess = false, Message = "Dosya büyüklüğü en fazla 250 KB olabilir" });
 
 
 
